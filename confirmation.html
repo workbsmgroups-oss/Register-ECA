@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informational enrollment confirmation page for the ENJOY CREATOR ACADEMY™ 3 Hours AI Video Creation Master Live Class.">
+  <meta name="theme-color" content="#050505">
+  <title>Enrollment Information | ENJOY CREATOR ACADEMY™</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#050505; --card:#101010; --yellow:#ffd400; --white:#fff; --muted:#aaa; --border:#282828; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body {
+      min-height:100vh; display:grid; place-items:center; padding:25px;
+      background:
+        radial-gradient(circle at 50% 15%, rgba(255,212,0,.13), transparent 34rem),
+        #050505;
+      color:var(--white); font-family:"DM Sans",sans-serif;
+    }
+    .wrap { width:min(100%,760px); }
+    .logo { width:64px; height:64px; border-radius:18px; object-fit:cover; background:#fff; border:1px solid rgba(255,212,0,.45); margin:0 auto 25px; }
+    .card {
+      background:linear-gradient(145deg,#151515,#0b0b0b);
+      border:1px solid var(--border); border-radius:30px; padding:clamp(28px,6vw,60px);
+      box-shadow:0 35px 100px rgba(0,0,0,.55); text-align:center;
+    }
+    .success {
+      width:72px; height:72px; margin:0 auto 25px; border-radius:50%; display:grid; place-items:center;
+      color:#050505; background:var(--yellow); font:800 2rem Manrope,sans-serif;
+      box-shadow:0 0 45px rgba(255,212,0,.18);
+    }
+    h1 { font:800 clamp(2rem,5vw,3.6rem)/1.05 Manrope,sans-serif; letter-spacing:-.05em; }
+    h1 span { color:var(--yellow); }
+    .intro { color:var(--muted); margin:18px auto 30px; max-width:590px; }
+    .details { border:1px solid #292929; border-radius:20px; overflow:hidden; text-align:left; margin:25px 0; }
+    .row { display:flex; justify-content:space-between; gap:20px; padding:16px 19px; border-bottom:1px solid #252525; }
+    .row:last-child { border-bottom:0; }
+    .row span { color:#777; }
+    .row strong { font-family:Manrope,sans-serif; text-align:right; }
+    .price { color:var(--yellow); font-size:1.25rem; }
+    .note { color:#999; font-size:.85rem; text-align:left; padding:17px; border:1px solid rgba(255,212,0,.16); border-radius:16px; background:rgba(255,212,0,.035); }
+    .back {
+      display:inline-flex; margin-top:28px; padding:13px 18px; border-radius:14px; border:1px solid #333;
+      background:#121212; color:#fff; font-weight:800; transition:.2s ease;
+    }
+    .back:hover { border-color:rgba(255,212,0,.55); transform:translateY(-2px); }
+    .small { color:#666; font-size:.73rem; margin-top:20px; }
+    @media(max-width:560px) {
+      .row { flex-direction:column; gap:5px; }
+      .row strong { text-align:left; }
+      .card { border-radius:23px; }
+    }
+    @media(prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; transition:none!important; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="logo" src="assets/logo.png" alt="ENJOY CREATOR ACADEMY logo">
+    <section class="card">
+      <div class="success" aria-hidden="true">✓</div>
+      <h1>ENROLLMENT <span>SUCCESSFUL</span> 🎬</h1>
+      <p class="intro">Thank you for enrolling in the ENJOY CREATOR ACADEMY™ 3 Hours AI Video Creation Master Live Class.</p>
+
+      <div class="details">
+        <div class="row"><span>Class</span><strong>AI Video Creation Master Live Class</strong></div>
+        <div class="row"><span>Date</span><strong>17 September 2026</strong></div>
+        <div class="row"><span>Time</span><strong>8:00 PM – 11:00 PM</strong></div>
+        <div class="row"><span>Mode</span><strong>Live Online</strong></div>
+        <div class="row"><span>Investment</span><strong class="price">₹199</strong></div>
+      </div>
+
+      <p class="note"><strong>Important:</strong> Keep your Razorpay payment confirmation/details safely. Class joining instructions and access information should be shared with enrolled participants through the academy's official communication channel.</p>
+      <p class="small">This page is informational. It does not independently verify or confirm a payment unless an actual Razorpay redirect, payment integration, or webhook verification has been configured.</p>
+
+      <a class="back" href="index.html">← BACK TO CLASS PAGE</a>
+    </section>
+  </main>
+</body>
+</html>
